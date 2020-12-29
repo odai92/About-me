@@ -1,4 +1,4 @@
-'use stric'
+'use strict'
 
 userName = prompt('Whats Your Name??');
 alert(userName + ", Happy to see you on my page!!");
@@ -60,3 +60,28 @@ if(fifQue.toLowerCase() === "yes"){
 }
 
 alert(userName);
+
+var numInput = prompt('Can you guess the correct number from 1 to 10?');
+
+while(numInput !== '7'){
+  numInput = prompt('try again');
+  numInput = prompt('try again');
+  numInput = prompt('try again');
+  numInput = prompt('try again');
+  numInput = prompt('The Answer is 7 !');
+}
+console.log(numInput);
+
+alert('Possible answers for next: from one to ten');
+
+var me = '3' || '1';
+var tryGuess = ['1', '3','5','7'];
+
+ do{
+   tryGuess = prompt('how many times i tryied to fix this assignment?'); me <= 4; 
+   console.log(tryGuess);
+ }while(tryGuess !== me){
+  alert("correct");
+  
+ }
+ console.log(tryGuess);
