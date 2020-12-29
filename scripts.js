@@ -129,7 +129,7 @@ var tryGuess = ['1', '3','5','7'];
              console.log('wrong answer');
              alert('wrong answer');
              var animal = 'this is all answers';
-             for ( var u = 0; u < rightAnswer.length, u++) {
+             for ( var u = 0; u < rightAnswer.length, u++;) {
                  console.log('answer number' + (u+1) + 'is:' + rightAnswer[u].toUpperCase())
                  animal = animal + 'answer number' + (u+1) + 'is:' + rightAnswer[u].toUpperCase()
              }
