@@ -5,7 +5,7 @@ alert(userName + ", Happy to see you on my page!!");
 
 
 var firQue = prompt('Are you feeling good today? yes or no.');
-console.log(firQue);
+// console.log(firQue);
 
 if(firQue.toLowerCase() === "yes"){
   alert('im happy to hear u r good');
@@ -16,7 +16,7 @@ if(firQue.toLowerCase() === "yes"){
 }
 
 var secQue = prompt('Have you ever been to Qatar? yes or no');
-console.log(secQue);
+// console.log(secQue);
 
 if(secQue.toLowerCase() === "yes"){
   alert('Its a nice country!');
@@ -27,7 +27,7 @@ if(secQue.toLowerCase() === "yes"){
 }
 
 var thiQue = prompt('Did you enjoyed yesterday? yes or no.');
-console.log(thiQue);
+// console.log(thiQue);
 
 if(thiQue.toLowerCase() === "yes"){
   alert('Hope today as well.');
@@ -38,7 +38,7 @@ if(thiQue.toLowerCase() === "yes"){
 }
 
 var forQue = prompt('You will watch the match tonight? yes or no.');
-console.log(forQue);
+// console.log(forQue);
 
 if(forQue.toLowerCase() === "yes"){
   alert('Hope your team will win!');
@@ -49,7 +49,7 @@ if(forQue.toLowerCase() === "yes"){
 }
 
 var fifQue = prompt('Do like Tennis? yes or no.');
-console.log(firQue);
+// console.log(firQue);
 
 if(fifQue.toLowerCase() === "yes"){
   alert('There is an offer at the club x');
