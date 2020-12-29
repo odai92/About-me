@@ -78,10 +78,64 @@ var me = '3' || '1';
 var tryGuess = ['1', '3','5','7'];
 
  do{
-   tryGuess = prompt('how many times i tryied to fix this assignment?'); me <= 4; 
+   tryGuess = prompt('how many times i tryied to fix this assignment?from 1 to 10'); me <= 4; 
    console.log(tryGuess);
  }while(tryGuess !== me){
   alert("correct");
+
   
  }
  console.log(tryGuess);
+
+ var rightAnswer = ['bear','cats','dogs','panda','jerraff','elephant']
+ var times = 6;
+ var me = 0;
+ while(me < 6){
+     var seventhQue = prompt ('guess animals get birth? u have six tries. ');
+     var checkAnswer = '';
+     if(seventhQue === null){
+         console.log('try to type answer.');
+         alert('try to type an answer.');
+         checkAnswer = checkAnswer + 'try to type an answer.';
+     } else{
+         if(rightAnswer.indexOf(seventhQue.toLocaleLowerCase()) !== -1){
+             console.log('Exactly!');
+             alert('Exactly');
+             totalScore++;
+             var animals = 'these are the answers';
+             for(var x=0; x < rightAnswer.length; x++){
+                 console.log('answer number' + (x+1) + 'is: '+ rightAnswer[x].toUpperCase())
+                 animals = animals + 'answer number' + (x+1) + 'is: '+ rightAnswer[x].toUpperCase;
+
+             }
+           console.log(animals);
+           alert(animals);
+           break;
+         }
+         else{
+             console.log('wrong answer');
+             alert('wrong answer');
+             checkNewAnswer = checkNewAnswer + "Wrong!";
+         }
+         times--;
+         if(times !== 0){
+             console.log('');
+             alert(checkNewAnswer + 'u stiil have' + tries +'again');
+         } else{
+             console.log('you lost!');
+             alert('you lost!');
+         }
+         if(me === 5){
+             console.log('wrong answer');
+             alert('wrong answer');
+             var animal = 'this is all answers';
+             for ( var u = 0; u < rightAnswer.length, u++) {
+                 console.log('answer number' + (u+1) + 'is:' + rightAnswer[u].toUpperCase())
+                 animal = animal + 'answer number' + (u+1) + 'is:' + rightAnswer[u].toUpperCase()
+             }
+             console.log(animal);
+             alert(animal);
+         }
+     }
+     me++
+ }
