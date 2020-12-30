@@ -15,3 +15,7 @@ footer {
   text-align: center;
   color: indigo;
 }
+
+ul {
+  list-style-image: url(images/ul.gif);
+}
