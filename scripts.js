@@ -1,5 +1,5 @@
 'use strict'
-
+var userName ='';
 userName = prompt('Whats Your Name??');
 alert(userName + ", Happy to see you on my page!!");
 
@@ -59,7 +59,7 @@ if(fifQue.toLowerCase() === "yes"){
   alert('Refresh your page and choose one of the answers!');
 }
 
-alert(userName);
+// alert(userName);
 
 var numInput = prompt('Can you guess the correct number from 1 to 10?');
 
@@ -101,7 +101,7 @@ var tryGuess = ['1', '3','5','7'];
          if(rightAnswer.indexOf(seventhQue.toLocaleLowerCase()) !== -1){
              console.log('Exactly!');
              alert('Exactly');
-             totalScore++;
+             checkAnswer++;
              var animals = 'these are the answers';
              for(var x=0; x < rightAnswer.length; x++){
                  console.log('answer number' + (x+1) + 'is: '+ rightAnswer[x].toUpperCase())
@@ -115,12 +115,12 @@ var tryGuess = ['1', '3','5','7'];
          else{
              console.log('wrong answer');
              alert('wrong answer');
-             checkNewAnswer = checkNewAnswer + "Wrong!";
+             checkAnswer = checkAnswer + "Wrong!";
          }
          times--;
          if(times !== 0){
              console.log('');
-             alert(checkNewAnswer + 'u stiil have' + tries +'again');
+             alert(checkAnswer + 'u stiil have' + times +'again');
          } else{
              console.log('you lost!');
              alert('you lost!');
