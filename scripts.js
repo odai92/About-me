@@ -74,7 +74,7 @@ console.log(numInput);
 
 alert('Possible answers for next: from one to ten');
 
-var me = '3' || '1';
+var me = '3';
 var tryGuess = ['1', '3','5','7'];
 
  do{
@@ -87,9 +87,9 @@ var tryGuess = ['1', '3','5','7'];
  }
  console.log(tryGuess);
 
- var rightAnswer = ['bear','cats','dogs','panda','jerraff','elephant']
+ var rightAnswer = ['bear','cats','dogs','panda','jerraff','elephant'];
  var times = 6;
- var me = 0;
+ me = 0;
  while(me < 6){
      var seventhQue = prompt ('guess animals get birth? u have six tries. ');
      var checkAnswer = '';
@@ -102,12 +102,8 @@ var tryGuess = ['1', '3','5','7'];
              console.log('Exactly!');
              alert('Exactly');
              checkAnswer++;
-             var animals = 'these are the answers';
-             for(var x=0; x < rightAnswer.length; x++){
-                 console.log('answer number' + (x+1) + 'is: '+ rightAnswer[x].toUpperCase())
-                 animals = animals + 'answer number' + (x+1) + 'is: '+ rightAnswer[x].toUpperCase;
-
-             }
+             var animals = me++;
+ 
            console.log(animals);
            alert(animals);
            break;
@@ -128,14 +124,17 @@ var tryGuess = ['1', '3','5','7'];
          if(me === 5){
              console.log('wrong answer');
              alert('wrong answer');
-             var animal = 'this is all answers';
+             var animal = 'this is all answers'+rightAnswer;
              for ( var u = 0; u < rightAnswer.length, u++;) {
-                 console.log('answer number' + (u+1) + 'is:' + rightAnswer[u].toUpperCase())
-                 animal = animal + 'answer number' + (u+1) + 'is:' + rightAnswer[u].toUpperCase()
+                 console.log('answer number' + (u+1) )
+                 animal = animal + 'answer number' + (u+1) 
              }
              console.log(animal);
              alert(animal);
          }
      }
      me++
+     for(var i = 0; i > rightAnswer.length; i++ );
+     
  }
+alert(rightAnswer);
