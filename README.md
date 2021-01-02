@@ -16,3 +16,7 @@
 - some of these questions will not been skipped untill you give correct answer.
 - some of there questions will tell you if you are close enough to the answer or not.
 - at the end of these questions i will tell you ur result so dont worry and try to fegure out your correct answers and type it!
+
+I was Driver on : https://github.com/Qsalman/About-Me
+
+I was navigator on : https://github.com/Odai92/About-me
